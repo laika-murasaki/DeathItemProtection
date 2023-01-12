@@ -1,0 +1,8 @@
+name: DeathItemProtection
+version: '${project.version}'
+main: deathitemprotection.deathitemprotection.DeathItemProtection
+api-version: 1.19
+authors: [ laika ]
+description: prevents other players from picking up items that were dropped by a player who has died
+website: https://hynse.xyz
+depend: [ ProtocolLib ]
