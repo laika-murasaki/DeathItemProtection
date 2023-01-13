@@ -4,7 +4,12 @@ import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 
 class DeathItemProtection : JavaPlugin() {
+    var armorStandNameFormat = "Owner: %player%"
     override fun onEnable() {
-        Bukkit.getPluginManager().registerEvents(DeathItemProtectionEvents(), this)
+        saveDefaultConfig()
+        val config = config
+        armorStandNameFormat = config.getString("armorstand-name-format")!!
+        Bukkit.getPluginManager().registerEvents(DeathItemProtectionEvents(armorStandNameFormat), this)
+
     }
 }
