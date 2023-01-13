@@ -131,4 +131,11 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+      <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages Apache Maven</name>
+            <url>https://maven.pkg.github.com/laika-murasaki/DeathItemProtection</url>
+        </repository>
+    </distributionManagement>
 </project>
